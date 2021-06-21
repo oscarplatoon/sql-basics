@@ -41,7 +41,7 @@ INSERT INTO enrollments (id, student_id, class_id, grade) VALUES (8, 4, 2, NULL)
 -- Leopold is taking CS 101
 INSERT INTO enrollments (id, student_id, class_id, grade) VALUES (9, 4, 1, NULL);
 -- Leopold is taking SPAN 210
-INSERT INTO enrollments (id, student_id, class_id, grade) VALUES (10, 4, 3, NULL);
+INSERT INTO enrollments (id, studentSE_id, class_id, grade) VALUES (10, 4, 3, NULL);
 -- Leopold took PHYS 218 and got a 'C'
 INSERT INTO enrollments (id, student_id, class_id, grade) VALUES (11, 4, 4, 'C');
 -- Leopold took CS 101 and got an 'A'
