@@ -1,5 +1,5 @@
 -- Schema
-DROP TABLE IF EXISTS students;
+DROP TABLE IF EXISTS students CASCADE;
 CREATE TABLE students (
   id           serial PRIMARY KEY,
   first_name   varchar(255) NOT NULL,
@@ -31,3 +31,15 @@ student_id    integer,
 class_id      integer,
 grade         varchar(10)
 );
+
+ALTER TABLE students ADD CONSTRAINT
+"fk_students_address_id" FOREIGN KEY("address_id")
+REFERENCES addresses("id");
+
+ALTER TABLE enrollments ADD CONSTRAINT
+"fk_enrollment_student_id" FOREIGN KEY("student_id")
+REFERENCES students("id");
+
+ALTER TABLE enrollments ADD CONSTRAINT
+"fk_enrollment_class_id" FOREIGN KEY("class_id")
+REFERENCES classes("id");
