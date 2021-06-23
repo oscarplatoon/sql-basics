@@ -74,7 +74,7 @@ fractional number | DECIMAL |
 variable length strings from 1-255 characters | VARCHAR([1-255]) |
 fixed length string | CHARACTER(length) |
 longer strings, up to 16KB | TEXT |
-date, no time| DATE |
+date, no time | DATE |
 date with time | TIMESTAMP |
 
 
