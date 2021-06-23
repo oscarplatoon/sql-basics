@@ -3,10 +3,10 @@
 -- so it references a specific address record. If we didn't specify a value
 -- for the id columns, the database would choose an integer for us.
 
-INSERT INTO addresses (id, line_1, city, state, zipcode) VALUES (1, '6232 Guiseppe Courts', 'Jamartown', 'Maryland', '49028');
-INSERT INTO addresses (id, line_1, city, state, zipcode) VALUES (2, '704 Cecil Mountain', 'West Jon', 'South Dakota', '91578');
-INSERT INTO addresses (id, line_1, city, state, zipcode) VALUES (3, '41613 Huel Ranch', 'Loycefort', 'Florida', '12109');
-INSERT INTO addresses (id, line_1, city, state, zipcode) VALUES (4, '1397 Braden Shoals', 'New Karine', 'New York', '03913');
+INSERT INTO addresses (id, line_1, city, state_name, zipcode) VALUES (1, '6232 Guiseppe Courts', 'Jamartown', 'Maryland', '49028');
+INSERT INTO addresses (id, line_1, city, state_name, zipcode) VALUES (2, '704 Cecil Mountain', 'West Jon', 'South Dakota', '91578');
+INSERT INTO addresses (id, line_1, city, state_name, zipcode) VALUES (3, '41613 Huel Ranch', 'Loycefort', 'Florida', '12109');
+INSERT INTO addresses (id, line_1, city, state_name, zipcode) VALUES (4, '1397 Braden Shoals', 'New Karine', 'New York', '03913');
 
 
 INSERT INTO students (id, first_name, last_name, birthdate, address_id) VALUES (1, 'Tianna', 'Lowe', '1985-02-17', 1);
@@ -15,11 +15,11 @@ INSERT INTO students (id, first_name, last_name, birthdate, address_id) VALUES (
 INSERT INTO students (id, first_name, last_name, birthdate, address_id) VALUES (4, 'Leopold', 'Towne', '1984-10-07', NULL);
 INSERT INTO students (id, first_name, last_name, birthdate, address_id) VALUES (5, 'Andre', 'Rohan', '1989-09-01', 4);
 
-INSERT INTO classes (id, name, credits) VALUES (1, 'CS 101', 4);
-INSERT INTO classes (id, name, credits) VALUES (2, 'HIST 107', 3);
-INSERT INTO classes (id, name, credits) VALUES (3, 'SPAN 210', 3);
-INSERT INTO classes (id, name, credits) VALUES (4, 'PHYS 218', 4);
-INSERT INTO classes (id, name, credits) VALUES (5, 'ART 118', 2);
+INSERT INTO classes (id, class_name, credits) VALUES (1, 'CS 101', 4);
+INSERT INTO classes (id, class_name, credits) VALUES (2, 'HIST 107', 3);
+INSERT INTO classes (id, class_name, credits) VALUES (3, 'SPAN 210', 3);
+INSERT INTO classes (id, class_name, credits) VALUES (4, 'PHYS 218', 4);
+INSERT INTO classes (id, class_name, credits) VALUES (5, 'ART 118', 2);
 
 
 -- Tianna took HIST 107 and got a 'B'
